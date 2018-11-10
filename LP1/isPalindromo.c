@@ -1,7 +1,8 @@
+//U2.3
 //Identifica se o string de entrada no terminal é um palíndromo. Respodendo sim ou não.
 #include <stdio.h>
-#include <string.h>
-#include <ctype.h>
+#include <string.h> //Biblioteca para usar o strlen()
+#include <ctype.h> //Bilioteca para usar  o tolower()
 
 char main(void){
     char string[256];
@@ -18,7 +19,7 @@ char main(void){
         if (string[j]==' '){
             j--;
         }
-        if (tolower(string[i]) != tolower(string[j])){
+        if (tolower(string[i]) != tolower(string[j])){ //tolower para não diferenciar o maiusculo da letra minuscula
             return printf("%s","NAO\n");
         }
         i++;
